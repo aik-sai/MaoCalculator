@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- OLD NUMBER -->
+    <TextView
+        android:id="@+id/tv_old_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="125"
+        android:textColor="#AAAAAA"
+        android:textSize="20sp"
+        android:textAlignment="textEnd" />
+
+    <!-- NEW NUMBER DISPLAY -->
+    <TextView
+        android:id="@+id/tv_new_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_old_number"
+        android:layout_marginTop="8dp"
+        android:text="55"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:padding="12dp"
+        android:background="@drawable/bg_display" />
+
+    <!-- OPERATOR -->
+    <TextView
+        android:id="@+id/tv_operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_new_number"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:text="+"
+        android:textColor="#FF9800"
+        android:textSize="18sp" />
+
+    <!-- BUTTON GRID -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_operator"
+        android:layout_marginTop="16dp"
+        android:columnCount="4">
+
+        <!-- ROW 1 -->
+        <TextView style="@style/NumberButton" android:text="1"/>
+        <TextView style="@style/NumberButton" android:text="2"/>
+        <TextView style="@style/NumberButton" android:text="3"/>
+        <TextView style="@style/OperatorButton" android:text="+"/>
+
+        <!-- ROW 2 -->
+        <TextView style="@style/NumberButton" android:text="4"/>
+        <TextView style="@style/NumberButton" android:text="5"/>
+        <TextView style="@style/NumberButton" android:text="6"/>
+        <TextView style="@style/OperatorButton" android:text="-"/>
+
+        <!-- ROW 3 -->
+        <TextView style="@style/NumberButton" android:text="7"/>
+        <TextView style="@style/NumberButton" android:text="8"/>
+        <TextView style="@style/NumberButton" android:text="9"/>
+        <TextView style="@style/OperatorButton" android:text="×"/>
+
+        <!-- ROW 4 -->
+        <TextView style="@style/ClearButton" android:text="C"/>
+        <TextView style="@style/NumberButton" android:text="0"/>
+        <TextView style="@style/EqualsButton" android:text="="/>
+        <TextView style="@style/OperatorButton" android:text="÷"/>
+
+    </GridLayout>
+
+</RelativeLayout>
