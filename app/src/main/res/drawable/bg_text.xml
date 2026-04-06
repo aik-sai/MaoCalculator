@@ -21,5 +21,5 @@ Theme Color (Advantage: Work well with Day/Night mode)
     <stroke
         android:width="2dp"
         android:color="?colorError" />
-    <corners android:topLeftRadius="20dp" />
+    <corners android:topLeftRadius="25dp" />
 </shape>
