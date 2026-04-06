@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onNumberClicked(v: View) {
-        val tv: TextView = v as TextView // down-casting
+        var tv: TextView = v as TextView // down-casting
         binding.tvNewNumber.text = tv.text
     }
 

@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_old_number"
         android:layout_marginTop="8dp"
-        android:text="55"
+        android:text="56"
         android:textColor="#FFFFFF"
         android:textSize="42sp"
         android:textStyle="bold"
